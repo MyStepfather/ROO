@@ -107,3 +107,29 @@ body > div.page > div.content > div > div > div.catalog__wrapper > div:nth-child
     margin-left: 2px;
     font-size: 0.7em;
 }
+
+@media (max-width: 818px) {
+    .item__price-cena, .item__plosh-znach {
+        font-size: 13px;
+    }
+    .catalog__item {
+        width: calc(33.3% - 10px);
+    }
+}
+@media (max-width: 620px) {
+    .catalog__wrapper {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    .catalog__item {
+        width: 100%;
+    }
+    .sale__title {
+        margin-top: 20px;
+    }
+    .sale__btn {
+        margin-top: 15px;
+    }
+}
