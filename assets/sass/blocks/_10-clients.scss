@@ -34,6 +34,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: stretch !important;
+        height: unset !important;
+        
     }
     &-container {
         width: 100%;
@@ -45,7 +48,8 @@
         // box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
         // width: unset !important;
-        height: 415px !important;
+        height: unset !important;
+        min-height: unset !important;
         display: flex !important;
         justify-content: center;
         align-items: center;
@@ -78,5 +82,12 @@
 @media(max-width: 768px) {
     .clients {
         padding: 102px 0 102px;
+/*         &__background {
+            height: unset !important;
+            min-height: unset !important;
+        }
+    }
+    .clients__wrapper { */
+
     }
 }

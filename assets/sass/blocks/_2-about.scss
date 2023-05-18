@@ -1,6 +1,6 @@
 .about {
     background-color: $grey;
-    padding: 98px 0 65px;
+    padding: 98px 0 0;
     background-image: url('../../../assets/img/coloring_bg.png');
     background-repeat: no-repeat;
     background-size: auto;
@@ -174,7 +174,7 @@
 
 @media(max-width: 650px) {
     .about {
-        padding: 79px 0 141px;
+        padding: 79px 0 30px;
     }
 }
 

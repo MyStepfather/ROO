@@ -24,15 +24,30 @@
         gap: 116px;
     }
     &__logo {
+        color: $green;
         display: flex;
         align-items: center;
         gap: 44px;
         p {
-            font-size: 22px;
+            font-size: 9px;
             font-weight: 800;
+            span {
+                font-size: 22px;
+            }
         }
     }
     &__tel {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        p {
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 15px;
+            text-transform: uppercase;
+        }
+    }
+    &__mail {
         display: flex;
         align-items: center;
         gap: 14px;
@@ -142,21 +157,29 @@
     }
 }
 
-@media(max-width: 992px) {
+@media(max-width: 966px) {
     .header {
         &__contacts {
-            gap: 11px;
+            gap: 5px;
+        }
+    }
+}
+@media(max-width: 850px) {
+    .header {
+        &__contacts {
+            gap: 5px;
         }
         &__logo {
             gap: 23px;
             p {
                 // width: 100%;
-                width: 230px;
-                font-size: 1em;
+                // width: 230px;
+                // font-size: 1em;
             }
         }
         &__tel {
             p {
+                width: 190px;
                 font-size: 12px;
             }
         }
@@ -166,7 +189,8 @@
 @media(max-width: 767px) {
     .header {
         border-bottom: none;
-        padding: 16px 0;
+        padding: 15px 0;
+        margin-top: 10px;
     }
     .navigate {
         padding: 0;
@@ -177,7 +201,7 @@
         // left: 0;
         margin: 0;
         width: 100% !important;
-        padding: 47px 16px 33px;
+        padding: 15px 16px 33px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -243,6 +267,41 @@
             }
         }
     } */
+}
+.subheader {
+    margin-top: 10px;
+    display: none;
+    font-size: 9px;
+    font-weight: 800;
+    color: $green;
+    span {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    #primary-website-header > div > div > div > button {
+        font-size: 8px;
+        min-width: 112px;
+        display: none;
+    }
+    .subheader {
+        display: block;
+        text-align: center;
+    }
+    .header__logo {
+        // display: none;
+    }
+    #primary-website-header > div > div {
+        // width: 100%;
+    }
+    #primary-website-header > div > div > div {
+        width: 100%;
+        justify-content: space-between;
+        gap: unset;
+    }
+    
 }
 
 @media (max-width: 340px) {

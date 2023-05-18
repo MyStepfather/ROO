@@ -109,8 +109,8 @@ var topicsSlider = new Swiper('.swiper-container.topics__container', {
 })
 
 var clientsSlider = new Swiper('.swiper-container.clients-container', {
-    autoplay: true,
-    loop: true,
+    // autoplay: true,
+    // loop: true,
     speed: 500,
     spaceBetween: 20,
     // centeredSlides: false,
