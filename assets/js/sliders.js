@@ -1,10 +1,10 @@
 var mainSlider = new Swiper('.swiper-container.main-slider', {
     // параметры слайдера
-    autoplay: {
+/*     autoplay: {
         delay: 2500,
-        speed: 100,
+        speed: 250,
         disableOnInteraction: false
-    },
+    }, */
     loop: true,
     spaceBetween: 40,
     navigation: {
@@ -33,7 +33,7 @@ var managerSlider = new Swiper('.swiper-container.managers-slider', {
     speed: 500,
     spaceBetween: 20,
     controller: true,
-    slidesPerView: 'auto',
+    slidesPerView: 3,
     pagination: {
         el: '.swiper-pagination.managers-pagination',
         clickable: true,

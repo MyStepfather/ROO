@@ -1,5 +1,5 @@
 .managers {
-    padding: 66px 0 60px 0;
+    padding: 0px 0 60px 0;
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -18,7 +18,7 @@
     // max-width: 387px;
     align-items: center;
     background: #FFFFFF;
-    border-radius: 20px;
+    // border-radius: 20px;
     transition: 0.2s;
     cursor: pointer;
     position: relative;
@@ -49,8 +49,9 @@
         }
     }
     &__photo {
-        border-radius: 20px;
+        // border-radius: 20px;
         width: 100%;
+        // border: 2px solid $green;
         
     }
     /* &:nth-child(3) {
@@ -87,6 +88,7 @@
 }
 .managers-slider {
     position: relative;
+    overflow: hidden;
 }
 .managers-pagination {
     top: unset !important;

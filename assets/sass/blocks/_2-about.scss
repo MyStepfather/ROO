@@ -45,6 +45,8 @@
     }
     &__photo {
         width: 50%;
+        float:left;
+        margin: 0 20px 20px 0;
     }
 }
 
@@ -52,12 +54,12 @@
     margin-top: 30px;
     width: 100%;
     // max-width: 692px;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     // gap: 167px;
     &__descr {
         // max-width: 692px;
-        margin-top: 30px;
+        // margin-top: 30px;
         font-size: 16px;
         line-height: 26px;
     }
