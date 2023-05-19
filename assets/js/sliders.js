@@ -7,10 +7,10 @@ var mainSlider = new Swiper('.swiper-container.main-slider', {
     }, */
     loop: true,
     spaceBetween: 40,
-    navigation: {
+/*     navigation: {
         nextEl: '.main-slider__button-next',
         prevEl: '.main-slider__button-prev'
-    },
+    }, */
 });
 
 var secondSlider = new Swiper('.swiper-container.second-slider', {
@@ -18,13 +18,29 @@ var secondSlider = new Swiper('.swiper-container.second-slider', {
     speed: 500,
     spaceBetween: 20,
     controller: true,
-    slidesPerView: "auto",
+    slidesPerView: 4,
     pagination: {
         type: 'bullets',
     },
     navigation: {
-        nextEl: '.swiper-button-prev',
-        prevEl: '.swiper-button-prev'
+        nextEl: '.swiper-button-next.main-slider__button-next.second__button-next',
+        prevEl: '.swiper-button-prev.main-slider__button-prev.second__button-prev'
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+        },
+        400: {
+            slidesPerView: 2,
+        },
+        850: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        }
     },
 });
 
@@ -37,6 +53,10 @@ var managerSlider = new Swiper('.swiper-container.managers-slider', {
     pagination: {
         el: '.swiper-pagination.managers-pagination',
         clickable: true,
+    },
+    navigation: {
+        prevEl: '.manager__button-prev',
+        nextEl: '.manager__button-next'
     },
     breakpoints: {
         0: {

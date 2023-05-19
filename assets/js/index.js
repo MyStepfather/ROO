@@ -283,6 +283,26 @@ function galleryThumbs() {
     });
 }
 
+function appear() {
+    const btn = document.querySelector('.sale__btn');
+    const login = document.querySelector('.sale__login');
+    
+    btn.addEventListener('click', () => {
+      login.style.display = 'flex';
+      login.style.opacity = 0;
+      let opacity = 0;
+      const interval = setInterval(() => {
+        opacity += 0.1;
+        login.style.opacity = opacity;
+        if (opacity >= 1) {
+          clearInterval(interval);
+        }
+      }, 50);
+    });
+}
+
+
+
 smoothScroll();
 navSticky();
 services();
@@ -292,3 +312,4 @@ mobNav();
 upBtn();
 // topics();
 // galleryThumbs();
+appear();

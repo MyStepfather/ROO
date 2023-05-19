@@ -25,6 +25,7 @@
     z-index: 1000;
     opacity: 0;
     transition: 0.2s ease-in-out;
+    padding-bottom: 50px;
     
     &__cross {
         position: absolute;
@@ -96,7 +97,7 @@
 
 @media(max-width: 768px) {
     .modal__inner {
-        padding: 82px 0 66px 0;
+        padding: 82px 20px 66px 20px;
     }
     .modal__header {
         padding-left: 16px;

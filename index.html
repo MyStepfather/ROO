@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-    <title>Порошковая окраска и пескоструйная очистка в Москве</title>
-    <meta name="description" content="Порошковая окраска и пескоструйная отчистка в Москве. Высокое качество, быстрое выполнение работ и индивидуальный подход к каждому клиенту. Закажите услуги прямо сейчас!"/>
+    <title>Региональная общественная организация "Бизнес и право"</title>
+    <meta name="description" content='РОО "Бизнес и Право". Поддержка Российского Бизнеса и Развития Предпринимательства'/>
     <meta name="robots" content="index, follow"/>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link rel="stylesheet" href="css/style.css?v=78">
+    <link rel="stylesheet" href="css/style.css?v=79">
     <link rel="stylesheet" href="assets/fonts/stylesheet.css?v=3">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="reasons">
                 <div class="container">
                     <div class="swiper-container second-slider">
                         <div class="swiper-wrapper second-slider__wrapper">
@@ -171,13 +171,9 @@
                                 <img class="slide__img" width="38" height="45" src="assets/img/icons/sec-slider/img_367792.png" alt="">
                             </div>
                         </div>
-                        <!-- <div class="second-slider__button-prev">
-                     <img src="assets/img/icons/arrow-left.svg" alt="">
-                  </div>
-                  <div class="second-slider__button-next">
-                     <img src="assets/img/icons/arrow-right.svg" alt="">
-                  </div> -->
                     </div>
+                    <div class="swiper-button-prev main-slider__button-prev second__button-prev"></div>
+                    <div class="swiper-button-next main-slider__button-next second__button-next"></div>
                 </div>
             </section>
 
@@ -279,6 +275,8 @@
                     </div>
                     <div class="swiper-pagination managers-pagination"></div>
                 </div>
+                <div class="swiper-button-prev main-slider__button-prev manager__button-prev"></div>
+                <div class="swiper-button-next main-slider__button-next manager__button-next"></div>
             </section>
             <section class="catalog" id="catalog">
                 <div class="container">
@@ -332,8 +330,15 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="sale__title">Посмотреть весь каталог</h2>
-                    <button class="btn-white sale__btn form-trig-btn">Посмотреть</button>
+                    <div class="sale__wrapper">
+                        <h2 class="sale__title">Посмотреть весь каталог</h2>
+                        <button class="btn-white sale__btn form-trig-btn">Посмотреть</button>
+                        <div class="sale__login">
+                            <input type="text" placeholder="Введите ваш ключ" required class="login__input">
+                            <button class="alert-btn login__go">Войти</button>
+                            <button class="login__reg form-trig-btn">Получить ключ</button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="video" class="video">
@@ -459,6 +464,30 @@
                             <iframe id="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9b96228acedf3480c9b625a2632dfe241fff9413a6ee2c57b7985a99702c2036&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                         </div>
                     </div>
+                    <div class="organization">
+                        <div class="organization__title">Наши реквизиты</div>
+                        <div class="organization__data data">
+                            <div class="data-1">
+                                <div class="data__ogrn"><strong>ОГРН</strong> - 1217700386210</div>
+                                <div class="data__reg"><strong>Дата регистрации</strong> - 18.08.2021</div>
+                                <div class="data__jur-adress"><strong>Юридический адрес</strong> - 107076, город Москва, Колодезный пер, д. 14, этаж 6, помещ. XIII ком. 16, 17, 17а, 18-21</div>
+                                <div class="data__inn">
+                                    <p><strong>ИНН</strong> - 9718177681</p>
+                                    <p><strong>КПП</strong> - 771801001</p>
+                                </div>
+                            </div>
+                            <div class="data-2">
+                                <div class="data__codes"><strong>Коды статистики</strong>
+                                    <p><strong>ОКПО</strong> - 71199175</p>
+                                    <p><strong>ОКАТО</strong> - 45263591000 </p>
+                                    <p><strong>ОКТМО</strong> - 45315000000 </p>
+                                    <p><strong>ОКФС</strong> - 53</p>
+                                    <p><strong>ОКОГУ</strong> - 4220003</p>
+                                    <p><strong>ОКОПФ</strong> - 20200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="clients" class="clients">
@@ -497,19 +526,20 @@
             <div class="container">
                 <div class="footer__wrapper">
                     <a href="" class="header__logo">
-                        <a href="" class="">
+                        <a href="" class="footer__left">
                             <p style="color: white;">Региональная общественная организация<br><span>"Бизнес и право"</span></p>
+                            <p class="footer-logo__descr">© 2023. РОО "Бизнесс и Право"</p>
                         </a>
-                        <p class="footer-logo__descr mob-hidden">© 2023. РОО "Бизнесс и Право"</p>
+                        
                         <!-- <p class="footer-logo__descr tablet-desc-hidden">© 2023. РОО "Бизнес и Право"</p> -->
                     </a>
                     <div class="footer-menu">
-                        <a class="footer-menu__item" href="#about">О компании</a>
-                        <a class="footer-menu__item" href="#services">Услуги</a>
-                        <a class="footer-menu__item" href="#price">Цены</a>
-                        <a class="footer-menu__item" href="#clients">Клиенты</a>
-                        <a class="footer-menu__item" href="#topics">Статьи</a>
-                        <a class="footer-menu__item" href="#contacts">Контакты</a>
+                        <a href="#about" class="footer-menu__item">Об организации</a>
+                        <a href="#managers" class="footer-menu__item">Руководство</a>
+                        <a href="#catalog" class="footer-menu__item">Каталог</a>
+                        <a href="#clients" class="footer-menu__item">Партнеры</a>
+                        <a href="#topics" class="footer-menu__item">статьи</a>
+                        <a href="#contacts" class="footer-menu__item">конаткты</a>
                     </div>
                     <div class="footer-contacts">
                         <div class="footer-contacts__upper">
@@ -552,17 +582,19 @@
         <img src="assets/img/icons/up_btn.webp" alt="Наверх">
     </button>
     
-
-
-
+    <div id="alert" class="alert modal">
+        <div class="modal__cross"><img src="assets/img/icons/cross-modal.svg" alt=""></div>
+        <div class="modal__inner">Вы не зарегистрированы в нашем каталоге. Оставьте заявку, наш менеджер свяжется с Вами и предоставит Вам уникальный ключ.
+        </div>
+        <button class="btn-green modal__button form-trig-btn">Оставить заявку</button>
+    </div>
     
-    
-    <!-- <div class="overlay"></div> -->
-    <script src="assets/js/index.js?v=10"></script>
-    <script src="assets/js/sliders.js?v=10"></script>
-    <script src="assets/js/modals.js?v=10"></script>
-    <script src="assets/js/particles.js?v=10"></script>
-    <script src="assets/js/app.js?v=10"></script>
+    <div class="overlay"></div>
+    <script src="assets/js/index.js?v=11"></script>
+    <script src="assets/js/sliders.js?v=11"></script>
+    <script src="assets/js/modals.js?v=11"></script>
+    <script src="assets/js/particles.js?v=11"></script>
+    <script src="assets/js/app.js?v=11"></script>
 
 
 

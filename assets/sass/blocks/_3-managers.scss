@@ -1,5 +1,6 @@
 .managers {
-    padding: 65px 0 60px 0;
+    position: relative;
+    padding: 65px 0 100px 0;
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -86,6 +87,20 @@
     } */
     
 }
+
+.swiper-button-prev.main-slider__button-prev.manager__button-prev {
+    left: 30%;
+    top: unset;
+    bottom: 25px;
+    display: block !important;
+}
+.swiper-button-next.main-slider__button-next.manager__button-next {
+    right: 30%;
+    top: unset;
+    bottom: 25px;
+    display: block !important;
+}
+
 .managers-slider {
     position: relative;
     overflow: hidden;

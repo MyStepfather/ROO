@@ -114,6 +114,39 @@ function form() {
     });
 }
 
+function alertModal () {
+    let modal = document.querySelector('.alert');
+    let button = document.querySelector('.alert-btn');
+    let cross = document.querySelector('.modal__cross');
+    
+    function openModal() {
+        let key = document.querySelector('input[type="text"]');
+        if (key.value) {
+            body.classList.add('overflow-y-hidden');
+            html.classList.add('overflow-y-hidden');
+            modal.classList.add('show');
+            bcg.classList.add('show');
+        }
+        else {
+            key.placeholder = 'Введите ключ';
+            const style = document.createElement('style');
+            style.textContent = `input[type="text"]::placeholder { color: red; }`;
+            document.head.appendChild(style);
+        }
+    }
+    function closeModal() {
+        modal.classList.remove('show');
+        bcg.classList.remove('show');
+        body.classList.remove('overflow-y-hidden');
+        html.classList.remove('overflow-y-hidden');
+        
+    }
+    button.addEventListener('click', openModal);
+    cross.addEventListener('click', closeModal);
+    bcg.addEventListener('click', closeModal);
+}
+
+alertModal ();
 price ();
 article ();
 form ();

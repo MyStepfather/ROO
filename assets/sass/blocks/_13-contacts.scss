@@ -73,6 +73,37 @@
 }
 
 
+.organization {
+    margin-top: 50px;
+    &__title {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+.data {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.data-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 320px;
+}
+.data-2 {
+    .data__codes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
 @media(max-width: 1050px) {
     .contacts__inner {
         flex-direction: column;
@@ -106,5 +137,9 @@
     }
     .footer__btn-form {
         margin-top: 15px;
+    }
+    .data {
+        flex-direction: column;
+        gap: 20px;
     }
 }

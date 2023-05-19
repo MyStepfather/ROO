@@ -131,6 +131,9 @@
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
+        @media (max-width: 870px) {
+            display: none;
+        }
     }
     .footer-menu {
         width: 100%;
@@ -179,5 +182,17 @@
     .footer-social--mob {
         margin-top: 30px;
         justify-content: center
+    }
+}
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width: 500px) {
+    .footer__left {
+        p {
+            text-align: center;
+        }
     }
 }
