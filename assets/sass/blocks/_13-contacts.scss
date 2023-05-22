@@ -103,6 +103,13 @@
         max-width: 320px;
     }
 }
+.diplom-img {
+    max-height: 200px;
+    height: 100%;
+    margin-left: auto;
+    max-height: 200px;
+    cursor: pointer;
+}
 
 @media(max-width: 1050px) {
     .contacts__inner {
@@ -120,8 +127,22 @@
     }
 
 }
-
-@media(max-width: 550px) {
+@media(max-width: 900px) {
+    .data {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .data-1 {
+        max-width: unset;
+    }
+    .diplom {
+        max-height: unset;
+        &-img {
+            margin-left: unset;
+            max-height: 200px;
+            margin-right: auto;
+        }
+    }
     .contacts {
         padding: 72px 0 40px;
     }
@@ -138,8 +159,27 @@
     .footer__btn-form {
         margin-top: 15px;
     }
-    .data {
-        flex-direction: column;
-        gap: 20px;
-    }
 }
+
+// @media(max-width: 550px) {
+//     .contacts {
+//         padding: 72px 0 40px;
+//     }
+//     .contacts__descr {
+//         font-size: 15px;
+//     }
+//     .contacts__title {
+//         font-size: 24px;
+//         line-height: 30px;
+//     }
+//     .contacts__data {
+//         width: 100%;
+//     }
+//     .footer__btn-form {
+//         margin-top: 15px;
+//     }
+    // .data {
+    //     flex-direction: column;
+    //     gap: 20px;
+    // }
+// }

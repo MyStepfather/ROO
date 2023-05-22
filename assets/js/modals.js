@@ -2,7 +2,7 @@ let body = document.querySelector('body');
 let html = document.querySelector('html');
 let bcg = document.querySelector('.overlay');
 
-function price () {
+/* function price () {
     let buttons = document.querySelectorAll('.accordeon__item');
     let modals = document.querySelectorAll('.prices');
     let cross = document.querySelectorAll('.modal__cross');
@@ -43,9 +43,9 @@ function price () {
             closeModal(index);
         });
     });
-}
+} */
 
-function article() {
+/* function article() {
     let buttons = document.querySelectorAll('.topic__btn');
     let modal = document.querySelectorAll('.article');
     let cross = document.querySelectorAll('.article__cross');
@@ -79,7 +79,7 @@ function article() {
             bcg.classList.remove('show');
         });
     });
-}
+} */
 
 function form() {
     let buttons = document.querySelectorAll('.form-trig-btn');
@@ -126,6 +126,12 @@ function alertModal () {
             html.classList.add('overflow-y-hidden');
             modal.classList.add('show');
             bcg.classList.add('show');
+            let formBtn = modal.querySelector('.btn-green');
+            let form = document.querySelector('#form-main');
+            formBtn.addEventListener('click', function() {
+                modal.classList.remove('show');
+                form.classList.add('show');
+            })
         }
         else {
             key.placeholder = 'Введите ключ';
@@ -146,7 +152,30 @@ function alertModal () {
     bcg.addEventListener('click', closeModal);
 }
 
+function imgUpscale() {
+    let img = document.querySelector('.diplom-img');
+    let imgModal = document.querySelector('#imgModal')
+    
+    function openModal() {
+        body.classList.add('overflow-y-hidden');
+        html.classList.add('overflow-y-hidden');
+        imgModal.classList.add('show');
+        bcg.classList.add('show');
+        
+    }
+    function closeModal() {
+        imgModal.classList.remove('show');
+        bcg.classList.remove('show');
+        body.classList.remove('overflow-y-hidden');
+        html.classList.remove('overflow-y-hidden');
+    }
+
+    img.addEventListener('click', openModal);
+    bcg.addEventListener('click', closeModal);
+}
+
 alertModal ();
-price ();
-article ();
+// price ();
+// article ();
 form ();
+imgUpscale ();

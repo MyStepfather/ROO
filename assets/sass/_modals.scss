@@ -9,6 +9,7 @@
     z-index: 500;
     opacity: 0;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .modal {
@@ -146,3 +147,20 @@
 .col-2--thick {
     width: 30% !important;
 }
+
+#imgModal {
+    cursor: pointer;
+    padding: 0 30px;
+    z-index: 1000 !important;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+/* .closeImg {
+    display: none;
+} */

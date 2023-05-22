@@ -28,7 +28,7 @@
 .footer-menu {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     font-weight: 500;
     font-size: 14px;
     line-height: 15px;
@@ -76,7 +76,7 @@
         margin-top: unset;
     }
     .footer-contacts__upper {
-        gap: 10px;
+        gap: 20px;
     }
     .footer-menu {
         gap: 0;
@@ -101,7 +101,7 @@
     }
 }
 
-@media(max-width:500px) {
+@media(max-width:768px) {
     .footer{
         padding: 38px 0 36px;
         position: relative;
@@ -189,7 +189,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .footer__left {
         p {
             text-align: center;
