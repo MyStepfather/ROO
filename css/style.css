@@ -778,13 +778,10 @@ img {
   margin-top: 30px;
 }
 
-.promo-wrapper {
-  overflow: hidden;
-}
-
 .main-slider {
   position: relative;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   max-width: 710px;
   /*     &__wrapper {
@@ -797,9 +794,11 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.main-slider__slide:hover a .slide__text {
-  height: 100%;
+  /*         &:hover {
+              a .slide__text {
+                  height: 100%;
+              }
+          } */
 }
 .main-slider__slide .slide__text {
   bottom: 0;
@@ -839,6 +838,24 @@ img {
 
 .main-slider__button-next {
   transform: rotate(180deg);
+}
+
+.slider-news__wrapper {
+  position: relative;
+}
+
+.swiper-button-next.main-slider__button-next.first__button-next {
+  right: 30%;
+  top: unset;
+  bottom: -60px;
+  display: block !important;
+}
+
+.swiper-button-prev.main-slider__button-prev.first__button-prev {
+  left: 30%;
+  top: unset;
+  bottom: -60px;
+  display: block !important;
 }
 
 .second-slider {
@@ -958,6 +975,12 @@ img {
   text-align: left;
 }
 
+.reasons {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 40px;
+}
+
 @media (max-width: 992px) {
   .main-slider__slide .slide__img {
     object-fit: cover;
@@ -988,6 +1011,9 @@ img {
   }
 }
 @media (max-width: 767px) {
+  .news {
+    margin-top: 50px;
+  }
   .slider-news {
     flex-direction: column;
     max-height: unset;
@@ -996,16 +1022,11 @@ img {
     padding: 0 0 10px;
     margin-top: 10px;
   }
-}
-@media (max-width: 675px) {
-  .promo {
-    padding-bottom: 70px;
+  .reasons {
+    padding-top: 0;
   }
 }
 @media (max-width: 500px) {
-  .promo {
-    padding-bottom: 50px;
-  }
   .main-slider__slide .slide__img {
     object-fit: cover;
   }
@@ -1034,11 +1055,6 @@ img {
     color: #333;
   }
 }
-.reasons {
-  position: relative;
-  padding-bottom: 100px;
-}
-
 .swiper-button-prev.main-slider__button-prev.second__button-prev {
   left: 30%;
   top: unset;
@@ -1450,9 +1466,6 @@ img {
 .item {
   overflow: hidden;
 }
-.item__upper img {
-  height: 100%;
-}
 .item__downer {
   padding: 10px;
   background-color: #f5f6f8;
@@ -1489,12 +1502,6 @@ img {
   font-size: 10px;
   font-weight: 300;
   color: #898989;
-}
-
-body > div.page > div.content > div > div > div.catalog__wrapper > div:nth-child(2) > div.item__upper > img {
-  max-height: 222px;
-  height: 100%;
-  width: 120%;
 }
 
 .catalog-header {

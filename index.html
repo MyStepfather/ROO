@@ -10,7 +10,7 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css?v=86">
+    <link rel="stylesheet" href="css/style.css?v=91">
     <link rel="stylesheet" href="assets/fonts/stylesheet.css?v=3">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -82,33 +82,38 @@
             <section class="promo ">
                 <div class="promo-wrapper container">
                     <div class="slider-news">
-                        <div class="swiper-container main-slider">
-                            <div class="swiper-wrapper main-slider__wrapper">
-                                <div class="swiper-slide main-slider__slide">
-                                    <a target="_blank" href="https://rosreestr.gov.ru/press/archive/za-chetyre-mesyatsa-v-moskve-oformleno-maksimalnoe-chislo-ipotechnykh-sdelok-za-vse-gody/">
-                                        <img class="main-slider__slide slide__img" src="assets/img/1-promo.jpg" alt="">
-                                        <h2 class="slide__text">Решение задач Российского бизнеса путем юридической поддержки и консультационных услуг. Многоуровневая правовая экспертиза.</h2>
-                                    </a>
+                        <div class="slider-news__wrapper">
+                            <div class="swiper-container main-slider">
+                                <div class="swiper-wrapper main-slider__wrapper">
+                                    <div class="swiper-slide main-slider__slide">
+                                        <a target="_blank" href="https://rosreestr.gov.ru/press/archive/za-chetyre-mesyatsa-v-moskve-oformleno-maksimalnoe-chislo-ipotechnykh-sdelok-za-vse-gody/">
+                                            <img class="main-slider__slide slide__img" src="assets/img/1-promo.jpg" alt="">
+                                            <h2 class="slide__text">Решение задач Российского бизнеса путем юридической поддержки и консультационных услуг. Многоуровневая правовая экспертиза.</h2>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide main-slider__slide">
+                                        <a target="_blank" href="https://rosreestr.gov.ru/press/archive/stabilnyy-aprel-na-vtorichnom-rynke-nedvizhimosti-stolitsy/">
+                                            <img class="main-slider__slide slide__img" src="assets/img/2-promo.jpg" alt="">
+                                            <h2 class="slide__text">Высокая экспертиза в сфере недвижимости и вопросах компетенции Росреестра.</h2>
+                                        </a>    
+                                    </div>
+                                    <div class="swiper-slide main-slider__slide">
+                                        <a target="_blank" href="https://rosreestr.gov.ru/press/archive/v-1-5-raza-uvelichilos-chislo-prinyatykh-v-aprele-stolichnym-rosreestrom-onlayn-zayavleniy-za-god/">
+                                            <img class="main-slider__slide slide__img" src="assets/img/3-promo.jpg" alt="">
+                                            <h2 class="slide__text">Основной задачей РОО «Бизнес и Право» является поддержка Российского бизнеса и содействие развитию предпринимательства в России.</h2>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide main-slider__slide">
-                                    <a target="_blank" href="https://rosreestr.gov.ru/press/archive/stabilnyy-aprel-na-vtorichnom-rynke-nedvizhimosti-stolitsy/">
-                                        <img class="main-slider__slide slide__img" src="assets/img/2-promo.jpg" alt="">
-                                        <h2 class="slide__text">Высокая экспертиза в сфере недвижимости и вопросах компетенции Росреестра.</h2>
-                                    </a>    
-                                </div>
-                                <div class="swiper-slide main-slider__slide">
-                                    <a target="_blank" href="https://rosreestr.gov.ru/press/archive/v-1-5-raza-uvelichilos-chislo-prinyatykh-v-aprele-stolichnym-rosreestrom-onlayn-zayavleniy-za-god/">
-                                        <img class="main-slider__slide slide__img" src="assets/img/3-promo.jpg" alt="">
-                                        <h2 class="slide__text">Основной задачей РОО «Бизнес и Право» является поддержка Российского бизнеса и содействие развитию предпринимательства в России.</h2>
-                                    </a>
-                                </div>
+        <!--                         <div class="main-slider__buttons-wrapper">
+                                    <div class="swiper-button-prev main-slider__button-prev"></div>
+                                    <div class="swiper-button-next main-slider__button-next"></div>
+                                </div> -->
+                                
                             </div>
-    <!--                         <div class="main-slider__buttons-wrapper">
-                                <div class="swiper-button-prev main-slider__button-prev"></div>
-                                <div class="swiper-button-next main-slider__button-next"></div>
-                            </div> -->
-    
+                            <div class="swiper-button-prev main-slider__button-prev first__button-prev"></div>
+                            <div class="swiper-button-next main-slider__button-next first__button-next"></div>
                         </div>
+                        
                         <div class="news">
                             <p class="news__header">Новости</p>
                             <div class="news__items">
@@ -550,20 +555,20 @@
                     <div class="footer-contacts">
                         <div class="footer-contacts__upper">
                             <div class="footer-contacts__adress">
-                                <img src="assets/img/icons/adress.svg" alt="">
+                                <img src="assets/img/icons/footer/adress.svg" alt="">
                                 <p>г. Москва, Очаковское ш., д. 28, стр. 2, эт. 4, оф. 403</p>
                             </div>
                             <div class="footer-contacts__time">
-                                <img src="assets/img/icons/time.svg" alt="">
+                                <img src="assets/img/icons/footer/time.svg" alt="">
                                 <p>Пн -Пт с 9:00 до 19:00</p>
                             </div>
                             <a href="tel:+74959225395" class="footer-contacts__phone">
-                                <img src="assets/img/icons/phone.svg" alt="">
+                                <img src="assets/img/icons/footer/phone.svg" alt="">
                                 <p>+7 495 922 53 95</p>
                             </a>
-                            <a class="footer-contacts__email" href="mailto:info@roo-bp.ru">
-                                <img src="assets/img/icons/adress.svg" alt="">
-                                <p>info@roo-bp.ru</p>
+                            <a  class="footer-contacts__email" href="mailto:info@roo-bp.ru">
+                                <img style="width: 15px; height: 15px;" src="assets/img/icons/footer/mail.svg" alt="">
+                                <p>info@roo&#8209;bp.ru</p>
                             </a>
                             <button class="footer__btn-form btn-green form-trig-btn">Связаться</button>
                         </div>
@@ -618,11 +623,11 @@
     </div>
 
     <div class="overlay"></div>
-    <script src="assets/js/index.js?v=12"></script>
-    <script src="assets/js/sliders.js?v=12"></script>
-    <script src="assets/js/modals.js?v=12"></script>
-    <script src="assets/js/particles.js?v=12"></script>
-    <script src="assets/js/app.js?v=12"></script>
+    <script src="assets/js/index.js?v=13"></script>
+    <script src="assets/js/sliders.js?v=13"></script>
+    <script src="assets/js/modals.js?v=13"></script>
+    <script src="assets/js/particles.js?v=13"></script>
+    <script src="assets/js/app.js?v=13"></script>
 
 
 

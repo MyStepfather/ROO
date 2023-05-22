@@ -1,6 +1,7 @@
 let body = document.querySelector('body');
 let html = document.querySelector('html');
 let bcg = document.querySelector('.overlay');
+let form = document.querySelector('#form-main');
 
 /* function price () {
     let buttons = document.querySelectorAll('.accordeon__item');
@@ -81,13 +82,14 @@ let bcg = document.querySelector('.overlay');
     });
 } */
 
-function form() {
+function forma() {
     let buttons = document.querySelectorAll('.form-trig-btn');
     let form = document.querySelector('#form-main');
     let cross = document.querySelector('.form__cross');
     let nav = document.querySelector('#nav');
     let burger = document.querySelector('.burger-pic');
-    
+    let sendBtn = document.querySelector('.oko-buttom-wrapper');
+
     buttons.forEach(button => {
         function openModal() {
             body.classList.add('overflow-y-hidden');
@@ -111,6 +113,7 @@ function form() {
         button.addEventListener('click', openModal);
         cross.addEventListener('click', closeModal);
         bcg.addEventListener('click', closeModal);
+        sendBtn.addEventListener('click', closeModal);
     });
 }
 
@@ -174,8 +177,44 @@ function imgUpscale() {
     bcg.addEventListener('click', closeModal);
 }
 
+if (document.querySelector('.oko-buttom-wrapper')) {
+    console.log('da')
+    sendBtn = document.querySelector('.oko-button-wrapper');
+    sendBtn.addEventListener('click', function() {
+        let form = document.querySelector('#form-main');
+        form.classList.remove('show');
+        bcg.classList.remove('show');
+        body.classList.remove('overflow-y-hidden');
+        html.classList.remove('overflow-y-hidden');
+    })
+}
+
+// const target = document.querySelector('#form-main');
+
+let observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      // проверяем, появилась ли кнопка "Отправить"
+        var submitButton = document.querySelector('.oko-buttom-wrapper');
+        if (submitButton) {
+
+            submitButton.addEventListener('click', function() {
+                form.classList.remove('show');
+                bcg.classList.remove('show');
+                body.classList.remove('overflow-y-hidden');
+                html.classList.remove('overflow-y-hidden');
+            })
+        }
+    });
+});
+  
+// конфигурация наблюдателя
+var config = { childList: true, subtree: true };
+
+// передаем элемент и конфигурацию в наблюдатель
+observer.observe(form, config);
+
 alertModal ();
 // price ();
 // article ();
-form ();
+forma ();
 imgUpscale ();

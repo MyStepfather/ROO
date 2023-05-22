@@ -19,7 +19,7 @@
     overflow: hidden;
     &__upper {
         img {
-            height: 100%;
+            // height: 100%;
             
 
         }
@@ -64,9 +64,9 @@
 }
 
 body > div.page > div.content > div > div > div.catalog__wrapper > div:nth-child(2) > div.item__upper > img {
-    max-height: 222px;
-    height: 100%;
-    width: 120%;
+    // max-height: 222px;
+    // height: 100%;
+    // width: 120%;
 }
 
 .catalog-header {

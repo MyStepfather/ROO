@@ -7,10 +7,10 @@ var mainSlider = new Swiper('.swiper-container.main-slider', {
     }, */
     loop: true,
     spaceBetween: 40,
-/*     navigation: {
-        nextEl: '.main-slider__button-next',
-        prevEl: '.main-slider__button-prev'
-    }, */
+    navigation: {
+        nextEl: '.swiper-button-next.main-slider__button-next.first__button-next',
+        prevEl: '.swiper-button-prev.main-slider__button-prev.first__button-prev'
+    },
 });
 
 var secondSlider = new Swiper('.swiper-container.second-slider', {
